@@ -19,7 +19,7 @@ document.getElementById("year").innerHTML = birthYear;
 document.getElementById("age").innerHTML = 2023 - birthYear;
 
 if(confirm("Do you want to use a custom profile picture?")==1){
-    document.getElementById("ppic").innerHTML = prompt("Please enter the file name of the picture. (Ex: wow.jpg)");
+    document.getElementById("ppic").src = prompt("Please enter the file name of the picture. (Ex: wow.jpg)"); //pwde din .setAttribute
     alert("Profile picture has been updated.");
 }
 else{
